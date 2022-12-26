@@ -98,5 +98,5 @@ Run `docker run --rm -it -v $PWD:/app -w /app perteghella/bump --help` for more 
 ## Build docker image
 
 ```
-docker buildx build --platform linux/amd64,linux/arm64 --tag perteghella/bump:1.0 --push .
+docker buildx build --platform linux/amd64,linux/arm64 --tag perteghella/bump:1.0 --tag perteghella/bump:latest --push .
 ```
