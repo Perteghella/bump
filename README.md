@@ -94,3 +94,9 @@ docker run --rm -v "$PWD":/app perteghella/bump  --extract --input "`docker -v`"
 ```
 
 Run `docker run --rm -it -v $PWD:/app -w /app perteghella/bump --help` for more help.
+
+## Build docker image
+
+```
+docker buildx build --platform linux/amd64,linux/arm64 --tag perteghella/bump:1.0 --push .
+```
