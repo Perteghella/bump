@@ -4,9 +4,9 @@ RUN apk --no-cache add build-base git mercurial gcc
 ENV D=/myapp
 WORKDIR $D
 # cache dependencies
-ADD go.mod $D
-ADD go.sum $D
-RUN go mod download
+#ADD go.mod $D
+#ADD go.sum $D
+#RUN go mod download
 # now build
 ADD . $D
 RUN cd $D && go build -o bump ./cmd && cp bump /tmp/

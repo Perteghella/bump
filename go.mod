@@ -1,6 +1,6 @@
 module github.com/treeder/bump
 
-go 1.12
+go 1.19
 
 require (
 	github.com/coreos/go-semver v0.3.0
