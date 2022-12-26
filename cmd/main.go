@@ -10,14 +10,14 @@ import (
 	"strings"
 
 	"github.com/coreos/go-semver/semver"
-	"github.com/treeder/bump"
+	"github.com/perteghella/bump"
 	"github.com/urfave/cli"
 )
 
 func main() {
 	app := cli.NewApp()
 	app.Name = "bump"
-	app.Usage = "bump it dawg! See https://github.com/treeder/bump for more info."
+	app.Usage = "bump it dawg! See https://github.com/perteghella/bump for more info."
 	app.Action = bumper
 	app.Flags = []cli.Flag{
 		cli.StringFlag{

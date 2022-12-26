@@ -17,7 +17,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v1
       with:
-        go-version: 1.14
+        go-version: 1.19
       id: go
 
     - name: Build
@@ -33,13 +33,13 @@ jobs:
         # GH_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
-        IMAGE: treeder/bump
+        IMAGE: perteghella/bump
       run: |
         git fetch --tags
         git tag
-        git config --global user.email "treeder+github@gmail.com"
+        git config --global user.email "perteghella+github@gmail.com"
         git config --global user.name "Github Action"
-        wget -O - https://raw.githubusercontent.com/treeder/bump/master/gitbump.sh | bash
+        wget -O - https://raw.githubusercontent.com/perteghella/bump/master/gitbump.sh | bash
         version=$(git tag --sort=-refname --list "v[0-9]*" | head -n 1)
         echo "new version $version"
 
