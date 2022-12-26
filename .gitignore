@@ -25,6 +25,7 @@
 /.pydevproject
 /.project
 /.vscode
+*.code-workspace
 **/*.code-workspace
 
 /bump
