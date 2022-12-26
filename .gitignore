@@ -11,5 +11,21 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# ignore binary packages and files
+**/*.rpm
+**/*.jar
+**/*.zip
+**/*.tar.gz
+**/*.tgz
+
+# ignore mac OS resource forks
+**/*.DS_Store
+
+# Eclipse and VSC stuff
+/.pydevproject
+/.project
+/.vscode
+**/*.code-workspace
+
 /bump
 tmp/

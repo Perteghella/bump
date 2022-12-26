@@ -1,6 +1,7 @@
 # Bump
 
 Bumps version files and other handy version tools.
+This is the multiplatform build (linux/arm and linux/amd) version of https://github.com/treeder/bump
 
 ## Usage
 
